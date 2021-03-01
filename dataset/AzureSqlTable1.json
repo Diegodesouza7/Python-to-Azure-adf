@@ -1,0 +1,74 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "idx_name",
+				"type": "varchar"
+			},
+			{
+				"name": "Rodada",
+				"type": "varchar"
+			},
+			{
+				"name": "Data",
+				"type": "varchar"
+			},
+			{
+				"name": "Horario",
+				"type": "varchar"
+			},
+			{
+				"name": "Dia",
+				"type": "varchar"
+			},
+			{
+				"name": "Mandante",
+				"type": "varchar"
+			},
+			{
+				"name": "Visitante",
+				"type": "varchar"
+			},
+			{
+				"name": "Vencedor",
+				"type": "varchar"
+			},
+			{
+				"name": "Arena",
+				"type": "varchar"
+			},
+			{
+				"name": "Mandante_Placar",
+				"type": "varchar"
+			},
+			{
+				"name": "Visitante_Placar",
+				"type": "varchar"
+			},
+			{
+				"name": "Estado_Mandante",
+				"type": "varchar"
+			},
+			{
+				"name": "Estado_Visitante",
+				"type": "varchar"
+			},
+			{
+				"name": "Estado_Vencedor",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Camp_Br_Final"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
