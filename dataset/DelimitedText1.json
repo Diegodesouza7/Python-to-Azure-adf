@@ -1,0 +1,81 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Campeonato-br.csv",
+				"container": "diego"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "idx_name",
+				"type": "String"
+			},
+			{
+				"name": "Rodada",
+				"type": "String"
+			},
+			{
+				"name": "Data",
+				"type": "String"
+			},
+			{
+				"name": "Horário",
+				"type": "String"
+			},
+			{
+				"name": "Dia",
+				"type": "String"
+			},
+			{
+				"name": "Mandante",
+				"type": "String"
+			},
+			{
+				"name": "Visitante",
+				"type": "String"
+			},
+			{
+				"name": "Vencedor",
+				"type": "String"
+			},
+			{
+				"name": "Arena",
+				"type": "String"
+			},
+			{
+				"name": "Mandante_Placar",
+				"type": "String"
+			},
+			{
+				"name": "Visitante_Placar",
+				"type": "String"
+			},
+			{
+				"name": "Estado_Mandante",
+				"type": "String"
+			},
+			{
+				"name": "Estado_Visitante",
+				"type": "String"
+			},
+			{
+				"name": "Estado_Vencedor",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
